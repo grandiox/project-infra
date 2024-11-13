@@ -3,7 +3,7 @@ version: "3.9"
 services:
   frontend:
     build:
-      context: ../frontend
+      context: ../project-frontend-remix
     ports:
       - "8080:8080"
     depends_on:
@@ -14,7 +14,7 @@ services:
 
   backend:
     build:
-      context: ../backend
+      context: ../project-backend-golang
     ports:
       - "3000:3000"
     depends_on:
